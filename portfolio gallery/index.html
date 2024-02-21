@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="./jquery-plugin/dist/js/lightgallery.min.js"></script>
+    <script src="./jquery-plugin/dist/js/lightgallery-all.min.js"></script>
+    <link rel="stylesheet" href="./jquery-plugin/dist/css/lightgallery.min.css">
+    <style>
+        h2{
+            text-align: center;
+   
+        }
+        .offer-project-sec .gallery-content h2
+ {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: -32px;
+    padding: -21px;
+    margin-top: 58px;
+    
+}
+.offer-project-sec .gallery-content p {
+    color: black;
+    font-size: 16px;
+    margin-top: -6px;
+    font-weight: 300;
+   
+}
+        .gallery-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="offer-project-sec">
+            <div class="gallery container">
+                <div class="gallery-content">
+                    <h2>Offer designs</h2>
+                    <p>Here are the latest project</p>
+                </div>
+                <ul class="gallery-images" id="lightGallery">
+                    <li  data-src="./portfolioimages/image1.png" data-sub-html="<h4>A California Home in the Desert With Japanese Influences</h4><p>Japanese architecture values the use of natural light and ventilation. The desert climate in California often allows for extended periods of outdoor living.Japanese design emphasizes tranquility and a sense of Zen.By incorporating these principles into your desert home, you can create a peaceful and calming environment, offering a retreat from the harshness of the desert landscape.</p>">
+                        <a href="#">
+                            <img src="./portfolioimages/image1.png">
+                        </a>
+                    </li>
+                    <li data-src="./portfolioimages/image2.png" data-sub-html="<h4>Danube Views and Ancient Architecture  Meet in Budapest Flat</h4><p>Japanese architecture values the use of natural light and ventilation. The desert climate in California often allows for extended periods of outdoor living.Japanese design emphasizes tranquility and a sense of Zen</p>">
+                        <a href="#">
+                            <img  src="./portfolioimages/image2.png">
+                        </a>
+                    </li>
+                    <li  data-src="./portfolioimages/image3.png" data-sub-html="<h4>6 Modern Offices That Underscore Flexibility and Inclusion</h4><p>An office and events space for a group producing fashion and art festivals and content is both industrial and flirty, the former print shop reenvisioned with a lounge/café zone defined by walls of ceramic tile and exposed studs, a monolithic marble bar served by bright lilac stools, and a sinuous banquette upholstered in metallic purple velvet. More blush tones appear in the central block used for photo and video shoots.</p>">
+                        <a href="#">
+                            <img  src="./portfolioimages/image3.png">
+                        </a>
+                    </li>
+                    <li  data-src="./portfolioimages/image5.jpg" data-sub-html="<h4>6 Modern Offices That Underscore Flexibility and Inclusion</h4><p>An office and events space for a group producing fashion and art festivals and content is both industrial and flirty, the former print shop reenvisioned with a lounge/café zone defined by walls of ceramic tile and exposed studs, a monolithic marble bar served by bright lilac stools, and a sinuous banquette upholstered in metallic purple velvet. More blush tones appear in the central block used for photo and video shoots.</p>">
+
+                    
+                        <a href="#">
+                            <img src="./portfolioimages/image5(1).jpg">
+                        </a>
+                    </li>
+                </ul>
+                </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        
+$(document).ready(function() {
+  $("#lightGallery").lightBox();
+});
+
+    </script>
+</body>
+</html>

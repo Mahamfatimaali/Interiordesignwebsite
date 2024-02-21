@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: Barlow-SemiBold;
+    src: url(../Barlow/Barlow-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Barlow-Regular;
+    src: url(../Barlow/Barlow-Regular.ttf);
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    padding-left: 54px;
+    padding-right: 54px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-1 {
+    width: 20%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navitems ul {
+    display: flex;
+    padding: 5px 10px;
+    margin: 0 30px;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.navbar .navitems ul li {
+    list-style-type: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+}
+
+.navitems ul li a {
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.navitems ul li a:hover {
+
+    transition: right .5s;
+    border-bottom: 5px solid #B88E2F;
+   
+}
+
+.dropdown {
+    position: absolute;
+    top: 66%;
+    left: -599px;
+    background-color: #f8f7f7;
+    min-width: 1332px;
+    padding: 22px;
+    z-index: 1;
+    display: flex;
+    right: 41px;
+    visibility: hidden;
+    margin-top: 10px;
+}
+
+.column {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.column p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.column p:hover {
+    color: #B88E2F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li:hover .dropdown {
+    display: block;
+    visibility: visible;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.icons {
+    padding: 20px;
+}
+
+.icons a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+
+.icons a:hover {
+
+    border: 1px solid #B88E2F;
+
+}
+
+
+/* portfolio banner section */
+.portfolio {
+    overflow-x: hidden;
+}
+
+.portfolio-section {
+    background-image: url(portfolioimages/Background\ OVerlay.png);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+}
+
+.box {
+    min-height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f5e0c4;
+    margin-top: 163px;
+    padding: 20px;
+}
+
+.portfolio h1 {
+    color: #B88E2F;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 19px;
+    padding: 10px;
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.content p {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    font-family: Barlow-Regular;
+    font-weight: 400;
+}
+
+/* masonary gallery section */
+
+.ourdesigns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.design p {
+    font-family: Barlow-Regular;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.design h3 {
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.masonary-gallery {
+    width: 80vw;
+    padding: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 50px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.masonary-gallery .large,
+.masonary-gallery .medium,
+.masonary-gallery .small {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    grid-column: auto / span 1;
+}
+
+.masonary-gallery .large {
+    grid-row: span 4;
+}
+
+.masonary-gallery .medium {
+    grid-row: span 3;
+}
+
+.masonary-gallery .small {
+    grid-row: span 2;
+}
+
+.masonary-gallery img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 1s all ease;
+
+
+}
+
+.masonary-gallery img:hover {
+    filter: grayscale(0%);
+    transition: all 1s ease;
+    transform: scale(1.5);
+    z-index: 2;
+    border: 4px solid black;
+
+
+}
+
+.masonary-gallery .large:hover {
+    background: linear-gradient(45deg, black, white);
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 80px;
+    background-color: white;
+}
+
+.question h4 {
+
+    color: #151515;
+    font-family: Poppins-Regular;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.button button {
+    color: #000;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    font-family: Poppins-ExtraBold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: #B88E2F;
+
+
+}
+
+.Designs-sec {
+    background-color: #f5e0c4;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: Barlow-Regular;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.controls li {
+    font-family: Barlow-Regular;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+
+.gallery .controls .buttons {
+    height: 50px;
+    width: 180px;
+    background: #fff;
+    color: #333;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(80, 75, 75, 0.3);
+    text-align: center;
+    border: 2px solid #B88E2F;
+    padding: 5px;
+}
+
+.gallery .controls .buttons.active {
+    background: #b88e2f;
+    color: #fff;
+}
+
+.image-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.gallery .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    margin: 20px;
+
+}
+
+.gallery .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img {
+    transform: scale(1.4);
+}
+
+.design-row h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 35px 97px;
+    margin-bottom: -36px;
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+
+}
+
+
+.design-row {
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-container .image:hover img {
+    transform: scale(1.4);
+}
+
+.desc-section4 
+{
+    background-color: #fff; ;
+    min-height: 200px;
+ 
+}
+.desc-4-row{
+    display: flex;
+}
+.desc-heading{
+    justify-content: center;
+  display: flex;
+  align-content: center;
+}
+.desc-4-row h5{
+    font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+margin-top: 71px;
+font-family: Barlow-SemiBold;
+    font-weight: 600;
+/*! margin-left: 180px; */
+/*! color: #b88e2f; */
+margin-left: 133px;
+}
+.desc-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
+    
+
+.desc-btn .btn{
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 13px 35px;
+    background-color: #B88E2F;
+    justify-content: center;
+    align-items: center;
+    text-decoration: inherit;
+    margin-top: 74px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-family: Barlow-Regular;
+    font-weight: 400;
+    margin-top: 78px;
+    margin-left: -60px;
+    border: none;
+    
+}
+.desc-btn .btn:hover{
+    background-color: white;
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+        transition: all 1s ease;
+}
